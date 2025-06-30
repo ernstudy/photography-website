@@ -1,0 +1,105 @@
+.cover {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2.5rem;
+  align-items: center;
+  width: 100%;
+  height: auto;
+}
+
+.info {
+  width: 100%;
+  height: auto;
+  padding-top: 5rem;
+}
+
+.name {
+  color: var(--text-color);
+  font-size: var(--big-font);
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.decorate {
+  color: var(--main-color);
+}
+
+.profession {
+  color: var(--text-color);
+  font-size: var(--h2-font);
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+.description {
+  color: var(--second-color);
+  font-size: var(--p-font);
+  line-height: 1.7;
+  letter-spacing: 0, 1rem;
+  margin-bottom: 2rem;
+}
+
+.icons h4 {
+  color: var(--text-color);
+  font-size: 22px;
+  margin-bottom: 1rem;
+}
+
+.icons a {
+  margin: 0 10px;
+}
+
+.icons a .bx {
+  font-size: 30px;
+  color: var(--text-color);
+  transition: ease 0.5s;
+}
+
+.icons a .bx:hover {
+  color: var(--second-color);
+}
+
+.buttons {
+  display: flex;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+.imgContainer {
+  text-align: center;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.img {
+  width: 100%;
+  max-width: 40rem;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .cover {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .buttons {
+    align-items: center;
+    justify-content: center;
+  }
+
+  .imgContainer {
+    margin-top: 2rem;
+  }
+
+  .img {
+    width: 100%;
+    max-width: 30rem;
+  }
+}
+@media (max-width: 320px) {
+  .buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+}

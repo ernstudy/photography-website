@@ -1,0 +1,14 @@
+.contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  font-size: 3.5rem;
+}
+
+.decorate {
+  color: var(--main-color);
+}

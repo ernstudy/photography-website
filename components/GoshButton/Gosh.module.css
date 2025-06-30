@@ -1,0 +1,37 @@
+.button {
+  color: #fcfcfc;
+  font-size: 1.8rem;
+  padding: 0.8rem 0.6rem;
+  border: none;
+  border-radius: 0.4rem;
+  position: relative;
+}
+.button::before {
+  content: "";
+  position: absolute;
+  width: 30%;
+  height: 0.2rem;
+  left: 0.4rem;
+  bottom: 0.4rem;
+  opacity: 0.3;
+  transition: 0.5s all;
+  background-color: #fff;
+}
+
+.button:hover::before {
+  opacity: 0.8;
+  width: 100%;
+}
+
+.icon {
+  font-size: 2rem;
+  color: #fcfcfc;
+  transition: color 0.3s ease;
+  margin-left: 0.5rem;
+  vertical-align: middle;
+}
+
+.button:hover .icon {
+  transition: all 0.5s;
+  transform: translate(1.2rem);
+}

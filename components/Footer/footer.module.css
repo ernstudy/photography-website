@@ -1,0 +1,21 @@
+.footer {
+  width: 100%;
+  padding: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.info {
+  color: #ccc;
+  font-size: 1.2rem;
+}
+
+.link {
+  font-weight: 700;
+  color: #fcfcfc;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
