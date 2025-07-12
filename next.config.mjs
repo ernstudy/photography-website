@@ -1,11 +1,11 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
-  experimental: {
-    appDir: true,
-    serverComponentsExternalPackages: ["@fortawesome/fontawesome-svg-core"],
-  },
+  output: "export",
+  serverExternalPackages: ["@fortawesome/fontawesome-svg-core"],
+
   images: {
+    unoptimized: true,
     remotePatterns: [
       {
         protocol: "https",
