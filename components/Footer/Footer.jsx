@@ -5,7 +5,7 @@ export default function Footer() {
     <footer className={styles.footer}>
       <p className={styles.info}>
         © {year} Ken Zee | Developed by{" "}
-        <a className={styles.link} href="#">
+        <a className={styles.link} href="https://ernstudy.com">
           Ernstudy
         </a>
       </p>
