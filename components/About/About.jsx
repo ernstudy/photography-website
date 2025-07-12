@@ -3,6 +3,7 @@
 import Image from "next/image";
 import MainButton from "../MainButton/MainButton";
 import styles from "./about.module.css";
+import profile from "../../public/images/profile-1.png";
 
 export default function About() {
   return (
@@ -10,11 +11,10 @@ export default function About() {
       <div className={styles.about}>
         <div className={styles.imageContainer}>
           <Image
+            priority
             className={styles.image}
-            src="/images/profile-1.png"
+            src={profile}
             alt="profile photo"
-            width={400}
-            height={400}
           />
         </div>
 

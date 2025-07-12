@@ -2,7 +2,7 @@
 import styles from "./about.module.css";
 import { motion } from "framer-motion";
 
-export default function About() {
+export default function page() {
   return (
     <motion.section
       initial={{ opacity: 0, y: 40 }}

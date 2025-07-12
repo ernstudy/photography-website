@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import ProjectCard from "../../components/ProjectCard/ProyectCard";
 import projectList from "../../lib/projecrts";
 
-export default function Portfolio() {
+export default function page() {
   return (
     <motion.section
       className={styles.portfolio}

@@ -4,6 +4,14 @@ import Cover from "@/components/Cover/Cover";
 import ProjectCard from "@/components/ProjectCard/ProyectCard";
 import styles from "./MainPage.module.css"; // Import the CSS module for styling
 import projectList from "@/lib/projecrts";
+import ReviewSlider from "@/components/ReviewSlider/ReviewSlider";
+import HomeContactSection from "@/components/ContactSection/ContactSection";
+
+export const metadata = {
+  title: "Home | Ken zee | ernstudy web site",
+  description: "about photographer ken",
+};
+
 export default function page() {
   // Get the last 5 projects from the project list
   const recentProjects = projectList.slice(-5);
@@ -27,7 +35,12 @@ export default function page() {
         </div>
       </section>
 
-      <ContactMe />
+      {/* Reviews */}
+
+      <ReviewSlider />
+
+      {/* <ContactMe /> */}
+      <HomeContactSection />
     </>
   );
 }

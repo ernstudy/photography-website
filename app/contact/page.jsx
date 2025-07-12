@@ -3,7 +3,7 @@ import styles from "./contact.module.css";
 import { useState } from "react";
 import { motion } from "framer-motion";
 
-export default function Contact() {
+export default function page() {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -80,7 +80,7 @@ export default function Contact() {
               transition={{ duration: 0.5, delay: 0.4 }}
             >
               <p>
-                <strong>Email:</strong> kenzee.photo@example.com
+                <strong>Email:</strong> kenzee.photo@gmail.com
               </p>
               <p>
                 <strong>Phone:</strong> +1 (555) 123-4567

@@ -11,8 +11,9 @@
 }
 
 .lastProjectsTitle {
-  font-size: var(--h2-font);
+  font-size: var(--heading-font);
   margin-bottom: 2rem;
   text-align: center;
   color: var(--text-color);
+  font-weight: bold;
 }

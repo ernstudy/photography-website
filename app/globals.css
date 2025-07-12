@@ -15,7 +15,7 @@
   --bg-color: #0d0d0d;
 
   --big-font: clamp(5.6rem, 4.5vw, 7.6rem);
-  --heading-font: clamp(3.2rem, 4.5vw, 4rem);
+  --heading-font: clamp(2.8rem, 4.5vw, 3.2rem);
   --h2-font: clamp(3.2rem, 3.5vw, 4rem);
   --p-font: clamp(1.6rem, 3.5vw, 1.8rem);
   --nav-link-font: clamp(1.6rem, 3.5vw, 1.8rem);

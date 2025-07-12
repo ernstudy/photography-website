@@ -2,8 +2,8 @@ import { Geist, Geist_Mono, Poppins } from "next/font/google";
 
 const poppins = Poppins({
   subsets: ["latin"],
-  weight: ["400", "600", "700"], // elige los pesos que vas a usar
-  variable: "--font-poppins", // opcional para usar en CSS como variable
+  weight: ["400", "600", "700"],
+  variable: "--font-poppins",
 });
 
 import "./globals.css";

@@ -31,14 +31,14 @@
 
 .logoLink {
   color: var(--main-color);
-  font-size: 32px;
+  font-size: 3.2rem;
   text-decoration: none;
   font-weight: 700;
   height: 100%;
 }
 
 .logoLink i {
-  margin-right: 5px;
+  margin-right: 0.5rem;
 }
 
 .navContainer {
@@ -55,7 +55,7 @@
   text-decoration: none;
   color: var(--text-color);
   transition: all 0.5s;
-  margin: 0 20px;
+  margin: 0 2rem;
   font-size: var(--nav-link-font);
 }
 
@@ -72,7 +72,7 @@
 
 .menuIcon {
   display: none;
-  font-size: 24px;
+  font-size: 2.4rem;
   color: var(--text-color);
   cursor: pointer;
 }
@@ -83,25 +83,13 @@
 
 @media screen and (max-width: 1200px) {
   .header {
-    padding: 5px 8% 3px;
-  }
-}
-
-@media screen and (max-width: 1300px) {
-  .header {
-    padding: 5px 7% 3px;
-  }
-}
-
-@media screen and (max-width: 1100px) {
-  .header {
-    padding: 5px 6% 3px;
+    padding: 0.5rem 8% 0.3rem;
   }
 }
 
 @media screen and (max-width: 768px) {
   .header {
-    padding: 5px 4% 3px;
+    padding: 0.5rem 6% 0.3rem;
     flex-wrap: wrap;
   }
 
@@ -138,7 +126,7 @@
 
   .menuLinks.show--menu {
     visibility: visible;
-    top: 7rem;
+    top: 0;
   }
 
   .menuLink {
@@ -151,39 +139,9 @@
     transition: all 0.5s;
   }
 }
-@media screen and (max-width: 768px) {
-  .header {
-    padding: 5px 3% 3px;
-  }
-  .navLink {
-    margin: 10px 0;
-  }
-
-  .logoLink {
-    font-size: 28px;
-  }
-}
 
 @media screen and (max-width: 480px) {
-  .navLink {
-    font-size: var(--mobile-nav-link-font);
-  }
-
   .logoLink {
-    font-size: 24px;
-  }
-}
-
-@media screen and (max-width: 360px) {
-  .header {
-    padding: 5px 2% 3px;
-  }
-
-  /* .navLink {
-    font-size: var(--mobile-nav-link-font);
-  } */
-
-  .logoLink {
-    font-size: 20px;
+    font-size: 2.4rem;
   }
 }

@@ -35,7 +35,12 @@ export default function Cover() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
         >
-          <Image className={stylesCover.img} src={profile2} alt="About me" />
+          <Image
+            priority
+            className={stylesCover.img}
+            src={profile2}
+            alt="About me"
+          />
         </motion.div>
       </div>
     </section>
