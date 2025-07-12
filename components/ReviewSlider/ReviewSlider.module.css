@@ -1,0 +1,148 @@
+.carousel {
+  background-color: #0d0d0d;
+  color: #f0f0f0;
+  padding: 5rem 2rem;
+  text-align: center;
+}
+
+.title {
+  font-size: var(--heading-font);
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 3rem;
+}
+
+.decorate {
+  color: var(--main-color);
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  position: relative;
+}
+
+.cards {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  flex-wrap: nowrap;
+  overflow: hidden;
+  position: relative;
+}
+
+.card {
+  width: 260px;
+  padding: 2rem;
+  border-radius: 1rem;
+  background-color: #1a1a1a;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.05);
+  opacity: 0.4;
+  transform: scale(0.92);
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  z-index: 1;
+}
+
+.active {
+  opacity: 1;
+  transform: scale(1.05);
+  z-index: 3;
+}
+
+.inactive {
+  z-index: 2;
+}
+
+.avatar {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin: 0 auto 1.2rem;
+  display: block;
+  box-shadow: 0 0 6px rgba(255, 255, 255, 0.2);
+}
+
+.text {
+  font-size: 1.6rem;
+  font-style: italic;
+  color: #ccc;
+  margin-bottom: 1rem;
+}
+
+.name {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #fff;
+}
+
+/* Botones generales */
+.button {
+  background-color: #ffffff;
+  color: #0d0d0d;
+  font-size: 1.8rem;
+  padding: 0.4rem 1rem;
+  border: none;
+  border-radius: 0.4rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  z-index: 4;
+  position: relative;
+}
+
+.button:hover {
+  background-color: #dddddd;
+}
+
+/* Solo para versión móvil */
+@media (max-width: 768px) {
+  .wrapper {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1rem;
+    position: relative;
+    width: 100%;
+    max-width: 100vw;
+  }
+
+  .card {
+    width: 220px;
+    flex-shrink: 0;
+    transform: translateY(30px) scale(0.92);
+    opacity: 0.3;
+  }
+
+  .active {
+    transform: translateY(-20px) scale(1.05);
+    opacity: 1;
+    z-index: 3;
+  }
+
+  .inactive {
+    transform: translateY(10px) scale(0.9);
+    z-index: 2;
+  }
+
+  .left {
+    position: absolute;
+    top: 50%;
+    left: 10;
+    transform: translate(0, -50%);
+  }
+
+  .right {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(-50%, 0);
+  }
+}
